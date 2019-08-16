@@ -9,9 +9,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-           <div class="card-body">
+           <div class="card-body bg-dark text-white">
              <p *ngFor='let quote of quotes' >
-                  {{quote.quote}}
+                {{quote.id}}:{{quote.quote}}
 
                   <app-quotes-details  [quotes]='quote'></app-quotes-details>
              </p>
