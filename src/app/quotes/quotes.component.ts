@@ -8,8 +8,16 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
-    {id:1, quote:'Don not cry because it is over, smile because it happened.', author:'Dr. Seuss'},
+    {id:1, quote:`Do not cry because it is over,smile because it happened.`, author:'Dr. Seuss'},
     {id:2, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
+    {id:3, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
+    {id:4, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
+    {id:6, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
+    {id:7, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
+
+
+
+
 
   ];
 

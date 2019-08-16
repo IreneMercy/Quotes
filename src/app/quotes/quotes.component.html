@@ -1,6 +1,27 @@
-<div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           <div class="card-body">
+             <p *ngFor='let quote of quotes' >
+                  {{quote.quote}}
 
-  <li *ngFor='let quote of quotes' >
-       {{quote.author}}
-  </li>
-</div>
+                  <app-quotes-details  [quotes]='quote'></app-quotes-details>
+             </p>
+           </div>
+        </div>
+        <div class="col-md-6">
+          <app-quote-form></app-quote-form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
