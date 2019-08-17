@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
@@ -9,13 +10,13 @@
       <p>
         ~ {{quotes.author}}
       </p>
-      <button (click)="upVote()" class="btn btn-info" type="button" name="button">Upvote</button>
+      <span (click)="upVote()" class="fa fa-thumbs-up"></span>
       {{numberOfLikes}}
-      <button (click)="downVote()"class="btn btn-info ml-3" type="button" name="button">Downvote</button>
+          <i (click)="downVote()"class="fa fa-thumbs-down ml-2"></i>
       {{numberOfDislike}}
-      <br>
-      <button (click)='completeQuote(true)' type="button" class="btn btn-info  mt-5">Delete</button>
-      
+      <!-- <br> -->
+      <button (click)='completeQuote(true)' type="button" class="btn btn-info ml-5">Delete</button>
+
     </div>
   </body>
 </html>
