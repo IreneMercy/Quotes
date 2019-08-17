@@ -10,7 +10,7 @@ export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
   new Quotes(1, 'Do not cry because it is over,smile because it happened.', 'Dr.Seuss', new Date()),
   new Quotes(2, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
-  
+
 
 
 
@@ -25,6 +25,12 @@ export class QuotesComponent implements OnInit {
       }
     }
 
+  }
+  addNewQuote(quotes){
+    let quotesLength = this.quotes.length;
+    quotes.id = quotesLength + 1;
+    quotes.completeQuote = new Date(quotes.completeQuote);
+    this.quotes.push(quotes)
   }
 
   constructor() {
