@@ -20,6 +20,11 @@ export class QuotesComponent implements OnInit {
 
 
   ];
+  quoteCompleted(quoteDelete, index){
+    if(quoteDelete){
+      this.quotes.splice(index, 1);
+    }
+  }
 
   constructor() { }
 

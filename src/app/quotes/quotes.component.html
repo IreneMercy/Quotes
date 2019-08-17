@@ -10,10 +10,10 @@
       <div class="row">
         <div class="col-md-6">
            <div class="card-body bg-dark text-white">
-             <p *ngFor='let quote of quotes' >
+             <p *ngFor='let quote of quotes; let i=index' >
                 {{quote.id}}:{{quote.quote}}
 
-                  <app-quotes-details  [quotes]='quote'></app-quotes-details>
+                  <app-quotes-details  [quotes]='quote' (quoteDelete)= 'quoteCompleted($event,i)'></app-quotes-details>
              </p>
            </div>
         </div>
