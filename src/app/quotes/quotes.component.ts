@@ -10,10 +10,7 @@ export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
   new Quotes(1, 'Do not cry because it is over,smile because it happened.', 'Dr.Seuss', new Date()),
   new Quotes(2, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
-  new Quotes(3, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
-  new Quotes(4, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
-  new Quotes(6, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
-  new Quotes(7, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
+  
 
 
 
