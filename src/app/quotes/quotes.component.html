@@ -12,6 +12,8 @@
            <div class="card-body bg-dark text-white">
              <p *ngFor='let quote of quotes; let i=index' >
                 {{quote.id}}:{{quote.quote}}
+                <br>
+                Created on {{quote.datePublished|date}}
                   <app-quotes-details  [quotes]='quote' (quoteDelete)= 'quoteCompleted($event,i)'></app-quotes-details>
              </p>
            </div>

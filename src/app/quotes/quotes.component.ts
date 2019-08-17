@@ -8,26 +8,33 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes:Quotes[]=[
-    {id:1, quote:`Do not cry because it is over,smile because it happened.`, author:'Dr. Seuss'},
-    {id:2, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
-    {id:3, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
-    {id:4, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
-    {id:6, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
-    {id:7, quote:'To live is the rarest thing in the world. Most people exist, that is all.', author:'Oscar Wilde'},
+  new Quotes(1, 'Do not cry because it is over,smile because it happened.', 'Dr.Seuss', new Date()),
+  new Quotes(2, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
+  new Quotes(3, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
+  new Quotes(4, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
+  new Quotes(6, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
+  new Quotes(7, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
 
 
 
 
 
-  ];
+];
   quoteCompleted(quoteDelete, index){
     if(quoteDelete){
-      this.quotes.splice(index, 1);
+      let confirmdelete = confirm(`Are you sure you want to delete ${this.quotes[index].author}?`)
+      if (confirmdelete){
+        this.quotes.splice(index, 1);
+      }
     }
+
   }
 
-  constructor() { }
-  ngOnInit() {
+  constructor() {
+
+  }
+  ngOnInit(){
+
   }
 
 }
