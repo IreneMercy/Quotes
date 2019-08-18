@@ -4,7 +4,9 @@
 .thumbsdown{
   color: orange;
 }
-
+.container{
+  font-family: italic;
+}
 .card-quotes{
   border-radius: 5px;
 }
@@ -19,4 +21,22 @@
 }
 .delete{
   color: orange;
+
+}
+.daystogo{
+  color:wheat;
+}
+.form-title{
+  color: skyblue;
+  text-transform:titlecase
+
+}
+.author{
+  color: wheat;
+}
+.submit-quote{
+  font-weight: bolder;
+  color: skyblue;
+  font-size: 20px;
+  text-transform: uppercase;
 }

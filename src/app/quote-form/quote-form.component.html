@@ -1,7 +1,7 @@
 <div class="container-fluid mt-5">
   <div class="card bg-dark text-white">
     <div class="card-title">
-        <h4 class="text-center text-titlecase mt-3">Add a Quote</h4>
+        <h4 class="text-center text-titlecase mt-5 form-title">Add a Quote</h4>
         <hr>
     </div>
     <div class="card-body">
@@ -13,10 +13,13 @@
             <p>Add a quote</p>
           </div>
         </div>
-        <!-- <div class="form-group">
-          <label>Date</label>
-          <input type="date" name="date" class="form-control" id="date">
-        </div> -->
+        <div class="form-group">
+          <label>Date Added</label>
+          <input type="date" name="date" class="form-control" id="date" [(ngModel)] = "newQuotes.datePublished" #name='ngModel' required>
+          <div class="alert alert-danger" [hidden]=name.valid||name.pristine>
+            <p>Date required</p>
+          </div>
+        </div>
         <div class="form-group">
           <label>Author</label>
           <input type="text" name="author" class="form-control" id="author" [(ngModel)] = "newQuotes.author" #name='ngModel' required>
@@ -24,7 +27,7 @@
             <p>Author required</p>
           </div>
         </div>
-        <button type="submit" class="btn btn-info w-100" name="button">Add Quote</button>
+        <button type="submit" class="btn btn-warning  w-100 submit-quote" name="button">Add Quote</button>
       </form>
     </div>
   </div>

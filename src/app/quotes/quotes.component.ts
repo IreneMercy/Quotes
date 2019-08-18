@@ -9,7 +9,7 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
   title:Quotes;
   quotes:Quotes[]=[
-  new Quotes(1, 'Do not cry because it is over,smile because it happened.', 'Dr.Seuss', new Date()),
+  new Quotes(1, 'Do not cry because it is over,smile because it happened.', 'Dr.Seuss', new Date(2019,7,16)),
   new Quotes(2, 'To live is the rarest thing in the world. Most people exist, that is all.', 'Oscar Wilde', new Date()),
 
 
