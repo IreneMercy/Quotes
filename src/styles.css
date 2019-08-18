@@ -9,5 +9,9 @@
   border-radius: 5px;
 }
 .title{
-  color:skyblue; 
+  color:skyblue;
+}
+.welcome{
+  text-transform: titlecase;
+  color: skyblue;
 }
