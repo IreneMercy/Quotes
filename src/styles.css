@@ -4,3 +4,13 @@
 .thumbsdown{
   color: skyblue;
 }
+/* .container{
+  background-color: black;
+} */
+.card-quotes{
+  border-radius: 5px;
+}
+.quotes{
+  background-color:skyblue;
+  color: white;
+}
