@@ -10,9 +10,9 @@
       <p>
         ~ {{quotes.author}}
       </p>
-      <span (click)="upVote()" class="fa fa-thumbs-up"></span>
+      <span (click)="upVote()" class="fa fa-thumbs-up thumbsup"></span>
       {{numberOfLikes}}
-          <i (click)="downVote()"class="fa fa-thumbs-down ml-2"></i>
+          <i (click)="downVote()"class="fa fa-thumbs-down ml-2 thumbsdown"></i>
       {{numberOfDislike}}
       <!-- <br> -->
       <button (click)='completeQuote(true)' type="button" class="btn btn-info ml-5">Delete</button>
