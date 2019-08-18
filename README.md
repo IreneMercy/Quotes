@@ -14,10 +14,10 @@ Irene Mercy Oyoo
 
 # Project Setup
 
-Fork the repository
-On your terminal run the command git clone "project link"
-On your terminal cd Quotes
-On tour terminal run the command code. to open the project on your text editor
+**Fork the repository**
+**On your terminal run the command git clone "project link"**
+**On your terminal cd Quotes**
+**On tour terminal run the command code. to open the project on your text editor.**
 
 # Live link
 
@@ -55,6 +55,6 @@ MIT License
 
 Irene Mercy Oyoo
 
-#Contact
+# Contact
 
 irenemercy700@gmail.com
