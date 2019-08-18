@@ -1,8 +1,8 @@
 .thumbsup{
-  color: skyblue;
+  color:orange;
 }
 .thumbsdown{
-  color: skyblue;
+  color: orange;
 }
 
 .card-quotes{
@@ -10,8 +10,13 @@
 }
 .title{
   color:skyblue;
+  font-family: italic;
 }
 .welcome{
   text-transform: titlecase;
   color: skyblue;
+  font-family: italic;
+}
+.delete{
+  color: orange;
 }
