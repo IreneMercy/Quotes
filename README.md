@@ -1,6 +1,27 @@
-# Quotes
+# Project Name
+
+Little Quotes
+
+# Project Description
+
+This a web application that allows user to view quotes, up-vote or down-vote a quote, and also add new quotes.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.1.
+
+# Author
+
+Irene Mercy Oyoo
+
+# Project Setup
+
+Fork the repository
+On your terminal run the command git clone "project link"
+On your terminal cd Quotes
+On tour terminal run the command code. to open the project on your text editor
+
+# Live link
+
+https://irenemercy.github.io/Quotes/
 
 ## Development server
 
@@ -25,3 +46,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# License
+
+MIT License
+
+# Copyright
+
+Irene Mercy Oyoo
+
+#Contact
+
+irenemercy700@gmail.com

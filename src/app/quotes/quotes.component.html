@@ -15,7 +15,7 @@
              <p *ngFor='let quote of quotes; let i=index' >
                 {{quote.id}}:{{quote.quote}}
                 <br>
-                <span class="daystogo">Created  {{quote.datePublished|date|countDate}} days ago</span>
+                <span class="daystogo">Created  {{quote.datePublished|countDate}} days ago</span>
                   <app-quotes-details  [quotes]='quote' (quoteDelete)= 'quoteCompleted($event,i)'></app-quotes-details>
              </p>
            </div>
@@ -24,7 +24,7 @@
           <app-quote-form (addQuotes)="addNewQuote($event)"></app-quote-form>
         </div>
       </div>
-    
+
     </div>
 
   </body>
