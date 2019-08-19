@@ -25,6 +25,7 @@
 }
 .daystogo{
   color:wheat;
+  font-size: 16px;
 }
 .form-title{
   color: skyblue;
@@ -33,10 +34,14 @@
 }
 .author{
   color: wheat;
+  font-size: 14px;
 }
 .submit-quote{
   font-weight: bolder;
   color: skyblue;
   font-size: 20px;
   text-transform: uppercase;
+}
+.quotes{
+  font-size:20px;
 }

@@ -12,8 +12,8 @@
            <div class="card-body bg-dark text-white pt-5 card-quotes mt-5">
              <h3 class="text-center mb-3 welcome">Welcome to Little quotes  ' '</h3>
              <hr>
-             <p *ngFor='let quote of quotes; let i=index' >
-                {{quote.id}}:{{quote.quote}}
+             <p *ngFor='let quote of quotes; let i=index' class="quotes">
+                {{quote.quote}}
                 <br>
                 <span class="daystogo">Created  {{quote.datePublished|countDate}}</span>
                   <app-quotes-details  [quotes]='quote' (quoteDelete)= 'quoteCompleted($event,i)'></app-quotes-details>
