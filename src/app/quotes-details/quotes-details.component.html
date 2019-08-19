@@ -10,10 +10,10 @@
       <p class="author mr-5">
         ~ {{quotes.author}}
       </p>
-      <span (click)="upVote()" class="fa fa-thumbs-up thumbsup"></span>
-      {{numberOfLikes}}
-      <span (click)="downVote()"class="fa fa-thumbs-down ml-2 thumbsdown"></span>
-      {{numberOfDislike}}
+      <span (click)="upVote(true)" class="fa fa-thumbs-up thumbsup"></span>
+      {{quotes.numberOfLikes}}
+      <span (click)="downVote(true)" class="fa fa-thumbs-down ml-2 thumbsdown"></span>
+      {{quotes.numberOfDislikes}}
       <!-- <br> -->
       <button (click)='completeQuote(true)' type="button" class="btn btn-warning text-white ml-5">Delete</button>
 
