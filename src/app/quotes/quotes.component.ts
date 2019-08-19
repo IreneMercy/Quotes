@@ -37,6 +37,11 @@ export class QuotesComponent implements OnInit {
     quotes.datePublished = new Date();
     this.quotes.push(quotes)
   }
+  // get sortQuotes(){
+  //   return this.quotes.sort((a,b)=>{
+  //     return<any>new Date(b.numberOfLikes) - <any> new Date(a.numberOfLikes);
+  //   });
+  // }
 
   constructor() {
 
